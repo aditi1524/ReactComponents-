@@ -1,0 +1,43 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+
+#first{
+    height:40px;
+    width:100%;
+    display:inline;
+
+}
+
+ h2 {
+ text-align: center;
+ font-size:2em;
+ padding-top : 150px;
+}
+
+table {
+    height : 300px;
+    width  : 450px;
+    margin : 100px 35% auto 35%;
+    border-collapse: collapse;
+    border:0;
+}
+table tr {
+  border-bottom: 5px solid black; 
+}
+
+td {
+    padding: 12px;
+    border-right: 5px solid black; 
+}
+
+#row3 {
+    border-bottom: 0px;
+}
+
+.col1 {
+    border-right:0;
+}
