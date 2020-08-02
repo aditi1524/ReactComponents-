@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Document</title>
+  <style>
+    
+      h4 {
+        font-size: 2.5vh;
+      }
+
+      #ans1,#ans2 ,#ans3 {
+         display : none;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid navbar bg-dark">
+   
+    <div class="col-8" style="height:5vh">
+      <ul class="nav" style="width:50vw;">
+        <li class="nav-item"><a class="nav-link bg-white btn btn-sm">HTML</a></li>
+        <li class="nav-item"><a class="nav-link bg-white btn btn-sm">CSS</a></li>
+        <li class="nav-item"><a class="nav-link bg-white btn btn-sm">JS</a></li>
+        <li><button class="btn bg-white offset-3 btn-sm">Result</button></li>
+      </ul>
+      
+    </div>
+    
+      <div class="col-2 mr-5">
+        <a><img src="code.png" height="28em"></a>
+    </div>
+  </div>
+  <!--           Questions Starts Here    -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class=" card col">
+        <div class="card-body">
+          <h4 class="card-tile" style="width: 100vw;">Who invented JavaScript ?</h4>
+          <div name="first">
+            <input type="radio" name="radio" value="Douglas Crockford"> <label class="card-text">a : Douglas Crockford</label><br>
+            <input type="radio" name="radio" value="Sheryl Sandberg"> <label class="card-text">b : Sheryl Sandberg</label><br>
+            <input type="radio" name="radio" value="Brendan Eich"> <label class="card-text">c : Brendan Eich</label>
+          </div>   <!-- Radio Button Ends-->    
+            <button class="btn-primary text-white mt-2" id="button1">Show Result</button> <!-- Ans Button -->
+            <p id="ans1" class="mt-1" style="width : 80vw">(A) Correct ans Bredan Eich created JavaScript in 1995 during his time at Netscape Communications .</p>
+        </div>  <!-- Card Ends--> 
+      </div> <!-- Column 1 Ends-->
+    </div> <!-- Row 1 Ends-->
+
+      <!--               Second Quiz Questions Starts Here         -->
+    <div class="row"> <!-- ROW 2 starts  -->
+      <div class=" card col">
+        <div class="card-body">
+          <h4 class="card-tile">Which one of these is javascript packet manager ?</h4>
+          <div name="first">
+            <input type="radio" name="radio1" value="Node.js"> <label class="card-text">a : Node.js</label><br>
+            <input type="radio" name="radio1" value="TypeScript"> <label class="card-text">b : TypeScript</label><br>
+            <input type="radio" name="radio1" value="npm"> <label class="card-text">c : npm</label>
+          </div>  <!--   Radio Ends -->     
+          <a class=" btn btn-primary text-white mt-2" id="button2" href="#ans2">Show Result</a> <!-- Ans Button -->
+          <p id="ans2" class="mt-1" style="width : 85vw">(C) Correct ans npm is the packet manager for the Node JavaScript Platform , puts modules in place so that node can find them</p>
+      </div>  <!-- Card 2 Ends--> 
+      </div> <!-- Column 2 Ends-->
+    </div>  <!-- Row 2 Ends-->
+
+    <!--                THIRD QUESTION STARTS FROM HERE     -->
+    <div class="row"> <!-- 3rd row starts here -->
+      <div class="card col">
+        <div class="card-body">
+          <h4 class="card-tile" >Which tools can you use to ensure code quality ?</h4>
+          <div name="first">
+            <input type="radio" name="radio2" value="Angular"> <label class="card-text">a : Angular</label><br>
+            <input type="radio" name="radio2" value = "jQuery"> <label class="card-text">b : jQuery</label><br>
+            <input type="radio" name="radio2" value="RequireJS"> <label class="card-text">c : RequireJS</label><br>
+            <input type="radio" name="radio2" value="ESLint"> <label class="card-text">d : ESLint</label>
+          </div>       
+           <a class=" btn btn-primary text-white mt-2" id="button3" href="#ans3">Show Result</a> <!-- Ans Button -->
+           <p id="ans3" class="mt-1" style="width : 85vw">(d) Answer i don't know its ans but i consider d as correct ans.</p>
+      </div>  <!-- Card 3 Body Ends--> 
+      </div> <!-- Column 3 Ends-->
+    </div> <!-- Row 3 Ends-->
+  </div>
+  
+
+<script>
+
+ const a = document.getElementById("button1");
+ const b = document.getElementById("button2");
+ const c = document.getElementById("button3");
+ const arr = [document.getElementById("ans1"),document.getElementById("ans2"),document.getElementById("ans3")];
+ const array = [document.getElementsByName("radio") , document.getElementsByName("radio1") , document.getElementsByName("radio2")];
+
+ const fun2 = (a , b , c) => {
+  arr[a].style.display = "block";
+      let val = array[c];
+      for(let index of val) {
+        if(index.checked) {
+          if(index.value === b) {
+            arr[a].style.border="1px solid green";
+          } else {
+            arr[a].style.border="1px solid red";
+          }
+          break;
+        }
+      }
+ };
+
+ a.addEventListener("click" , () => { 
+    fun2(0,"Douglas Crockford" , 0);
+});
+
+ b.addEventListener("click" , () => {
+    fun2(1,"npm",1);
+ });
+
+
+ c.addEventListener("click" , () => { 
+    fun2(2,"ESLint",2);
+ });
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

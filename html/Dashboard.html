@@ -1,0 +1,163 @@
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <title>Dashboard Design</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <style>
+       .card {
+         border-color: grey;
+       }
+     </style>
+    </head>
+    <body>
+
+      <div class="container-fluid navbar" style="background-color: blue;">
+        <div class="col-sm-3">
+          <h4 class="text-white navbar-brand">Duomly Dashboard</h4>
+        </div>
+        <div class="col-sm-8">
+            <input class="form-control h-100" id="search-input" style="background-color:rgba(118, 118, 235, 0.945);" placeholder="search...." type="search"> 
+          </div>
+          <div class="col-sm-1">
+            <button class="btn text-white" style="background-color:rgba(40, 9, 243, 0.993);" type="submit">logout</button>
+
+          </div>
+      </div>
+      
+
+      <div class="container-fluid">
+      <div class="row">
+        
+          <div class="col-sm-3">
+           <i class="fa fa-angle-right" id="one">  Candidates</i></br>
+            <i class="fa fa-angle-right" id="one">  Jobes</i><br>
+            <i class="fa fa-angle-right" id="one">  Orders</i><br>
+            <i class="fa fa-angle-right" id="one">  Reports</i><br>
+          </div> <!-- Col1 Ends-->
+          <div class="col-sm-9 border"> <!-- Col 2 Starts-->
+            <caption><h2 class=" h2 py-lg-2 mb-3 border-bottom">Candidates</h2></caption>
+        <!-- Table Starts Here-->
+
+            <div class="table-responsive"> <!-- Div wrapped table to make it responsive -->
+            <table class="table table-dark table-bordered table-hover table-sm"> 
+              <thead> <!-- Head Starts-->
+                <tr> <!-- Ist row heading-->
+                  <th>#</th>
+                  <th>First</th>
+                  <th>Last</th>
+                  <th>Job</th>
+                </tr>
+              </thead> <!-- Head Ens-->
+              <tbody> <!-- Body Start-->
+                <tr> <!-- 1st Body row-->
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>Doctor</td>               
+                </tr>
+                <tr> <!-- 2nd Body row-->
+                  <td>2</td>
+                  <td>Jacodo</td>
+                  <td>Thomton</td>
+                  <td>Builder</td>               
+                </tr>
+                <tr> <!-- 3rd Body Row-->
+                  <td>3</td>
+                  <td>Martin</td>
+                  <td>Joe</td>
+                  <td>Architect</td>               
+                </tr>
+                <tr> <!-- 4th Body Row-->
+                  <td>4</td>
+                  <td>Kate</td>
+                  <td>Mayers</td>
+                  <td>Nurse</td>               
+                </tr>
+                <tr> <!-- 5th Body Row-->
+                  <td>5</td>
+                  <td>Monica</td>
+                  <td>Smith</td>
+                  <td>Assistant</td>               
+                </tr>
+              </tbody> <!-- Body Ends-->
+            </table>
+            </div> <!-- Responsive Div Ends -->
+            <caption><h3 class="h3">Invoices</h3></caption>
+            <div class="row"> <!-- Another Row in sec col-->
+
+              <div class="col-md-6"> <!-- Col1 Another-->
+                  <div class="card mb-3" style="border-color: gray;"> <!-- Card Starts-->
+                    <div class="card-body">
+                      <h4 class="card-tile">Invoice #98761</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, perferendis non voluptate at corporis dignissimos 
+                        cumque possimus, libero sequi</p>
+                        <a class=" btn btn-primary text-white">Print</a>
+                    </div> 
+                  </div>  <!-- Card Ends--> 
+              </div>  <!-- Col1 Another Ends-->
+
+              <div class="col-md-6"> <!-- Col 2 Another-->
+                <div class="card mb-3"> <!-- Card Starts-->
+                  <div class="card-body">
+                    <h4 class="card-tile">Invoice #98761</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, perferendis non voluptate at corporis dignissimos 
+                      cumque possimus, libero sequi</p>
+                      <a class=" btn btn-primary text-white">Print</a>
+                  </div> 
+                </div>  <!-- Card Ends--> 
+              </div> <!-- Col2 Another Ends-->
+            </div> <!-- Another Row Ends-->
+
+            <div class="row"> <!-- Another Row2 in sec col-->
+
+              <div class="col-md-6"> <!-- Col1 Another row2-->
+                  <div class="card mb-3"> <!-- Card Starts-->
+                    <div class="card-body">
+                      <h4 class="card-tile">Invoice #98761</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, perferendis non voluptate at corporis dignissimos 
+                        cumque possimus, libero sequi</p>
+                        <a class=" btn btn-primary text-white">Print</a>
+                    </div> 
+                  </div>  <!-- Card Ends--> 
+              </div>  <!-- Col1 Another row2 Ends-->
+
+              <div class="col-md-6"> <!-- Col 2 Another row2-->
+                <div class="card mb-3"> <!-- Card Starts-->
+                  <div class="card-body">
+                    <h4 class="card-tile">Invoice #98761</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, perferendis non voluptate at corporis dignissimos 
+                      cumque possimus, libero sequi</p>
+                      <a class=" btn btn-primary text-white">Print</a>
+                  </div> 
+                </div>  <!-- Card Ends--> 
+              </div> <!-- Col2 Another2 Ends-->
+            </div> <!-- Another Row2 Ends-->
+
+
+          </div>
+      </div> <!-- Div row Ends-->
+      </div> <!-- Container Fluid Ends-->
+
+
+
+
+
+
+
+
+
+        
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+  </html>
